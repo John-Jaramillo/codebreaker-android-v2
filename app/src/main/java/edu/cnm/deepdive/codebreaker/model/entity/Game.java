@@ -34,7 +34,6 @@ public class Game {
   @ColumnInfo(name = "match_id", index = true)
   private Long matchId;
 
-  @NonNull
   private String pool;
 
   @NonNull
@@ -81,12 +80,11 @@ public class Game {
     this.pool = pool;
   }
 
-  @NonNull
   public String getCode() {
     return code;
   }
 
-  public void setCode(@NonNull String code) {
+  public void setCode(String code) {
     this.code = code;
   }
 
