@@ -10,6 +10,7 @@ import com.google.gson.annotations.Expose;
 import java.util.Date;
 import java.util.UUID;
 
+@SuppressWarnings("NotNullFieldNotInitialized")
 @Entity(
     tableName = "user_profile",
     indices = {
@@ -41,7 +42,7 @@ public class User {
 
   @Ignore
   @Expose
-  private UUID exteralKey;
+  private UUID externalKey;
 
 
   public long getId() {
@@ -87,11 +88,11 @@ public class User {
     this.connected = connected;
   }
 
-  public UUID getExteralKey() {
-    return exteralKey;
+  public UUID getExternalKey() {
+    return externalKey;
   }
 
-  public void setExteralKey(UUID exteralKey) {
-    this.exteralKey = exteralKey;
+  public void setExternalKey(UUID externalKey) {
+    this.externalKey = externalKey;
   }
 }
