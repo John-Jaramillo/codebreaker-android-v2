@@ -21,9 +21,11 @@
   <group
     android:id="@+id/secondary_group"
     android:checkableBehavior="none">
+
     <item
       android:id="@+id/navigation_settings"
       android:title="@string/title_settings"/>
+
   </group>
 
 </menu>
